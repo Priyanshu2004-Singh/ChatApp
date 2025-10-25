@@ -7,7 +7,7 @@ const Register = () => {
         username: '',
         email: '',
         password: '',
-        confirmPassword: '',
+        // confirmPassword: '',
     });
     const [error, setError] = useState('');
     const [loading, setLoading] = useState(false);
@@ -129,7 +129,7 @@ const Register = () => {
                     </div>
 
                     {/* Confirm Password Field */}
-                    <div className="relative">
+                    {/* <div className="relative">
                         <FaLock className="absolute top-1/2 left-3 transform -translate-y-1/2 text-gray-400" />
                         <input
                             id="confirmPassword"
@@ -141,7 +141,7 @@ const Register = () => {
                             placeholder="Confirm Password"
                             className="appearance-none rounded-md relative block w-full pl-10 pr-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                         />
-                    </div>
+                    </div> */}
 
                     {/* Submit Button */}
                     <button
