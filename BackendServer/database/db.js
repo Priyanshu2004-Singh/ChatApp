@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+import { DB_NAME } from "../constants.js";
 
 /**
  * Connect to MongoDB using the MONGOOSE_URL environment variable.
@@ -14,8 +15,6 @@ export async function connectDB() {
 
     try {
         await mongoose.connect(uri, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
             dbName: "ChatAppDB",
         });
         console.log("✅ Connected to MongoDB database");

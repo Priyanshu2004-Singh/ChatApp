@@ -1,0 +1,7 @@
+Test registration details: 
+
+curl -i -X POST http://localhost:3000/api/v1/user/register -H "Content-Type: application/json" -d '{"userName":"curl_test","email":"curl_test_$(date +%s)@example.com","password":"Password123!"}'
+
+userName: curl_test
+email: curl_test_$(date +%s)@example.com
+password: Password123!

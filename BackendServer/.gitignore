@@ -139,3 +139,13 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+
+# ! Restrct this file's access permissions to owner only (chmod 600 .env) ! #
+# ! Do not share this file or commit it to version control ! #
+
+
+./logs/registerLogs.json
+./logs
+
+# ! Keep your secrets safe ! #

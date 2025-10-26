@@ -5,7 +5,7 @@ import dotenv from "dotenv";
 import connectDB from './database/db.js';
 
 //Importing Routes
-import userRoutes from "./routes/user.routes.js";
+import testroute from "./routes/user.routes.js";
 
 
 //Initiasing App
@@ -40,7 +40,7 @@ app.use(
 );
 
 //Using Routes:
-app.use("/api/v1/user", userRoutes);
+app.use("/api/v1/user", testroute);
 
 const PORT = process.env.PORT;
 
